@@ -66,8 +66,8 @@ Each friend object has the format:
 * [x] In `App.js`, create a navigation bar that allows the user to redirect to logout, friendslist or add friend.
 
 #### Build the a PrivateRoute component
-* [ ] Create a `<PrivateRoute />` component to protect your other routes. It should check localStorage for a token, and redirect the user to your login route if there is not a token.
-* [ ] Use your protected route to restrict access to your `/friends` and `/friends/add` routes.
+* [x] Create a `<PrivateRoute />` component to protect your other routes. It should check localStorage for a token, and redirect the user to your login route if there is not a token.
+* [x] Use your protected route to restrict access to your `/friends` and `/friends/add` routes.
 
 ### Task 3: Stretch goals
 - [ ] Add in a modularized way to access protected endpoints using axiosWithAuth.
@@ -75,7 +75,7 @@ Each friend object has the format:
 - [ ] Style as you wish.
 
 ### Submission Format
-- [ ] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
-- [ ] Connect your fork to Codegrade using the "Connect Git" button.
-- [ ] Find your newly created fork from the list and push your work to main.
-- [ ] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ
+- [x] If this is your first time connecting a submission, authorize your github account within the codegrade assignment.
+- [x] Connect your fork to Codegrade using the "Connect Git" button.
+- [x] Find your newly created fork from the list and push your work to main.
+- [x] Check this video for details: www.youtube.com/watch?v=fC2BO7dI6IQ

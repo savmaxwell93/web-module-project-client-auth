@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
 
+import PrivateRoute from './components/PrivateRoute';
+
 import Login from './components/Login';
 import FriendsList from './components/friendsList';
 import AddFriends from './components/addFriend';
@@ -21,15 +23,9 @@ function App() {
           </nav>
         </header>
         <Switch>
-          <Route exact path='/friends/add'>
-            <AddFriends/>
-          </Route>
-          <Route exact path='/friends'>
-            <FriendsList/>
-          </Route>
-          <Route path='/logout'>
-            <Logout/>
-          </Route>
+          <PrivateRoute exact path='/friends/add' component={AddFriends}/>
+          <PrivateRoute exact path='/friends' component={FriendsList}/>
+          <PrivateRoute path='/logout' component={Logout}/>
           <Route exact path='/login'>
             <Redirect to='/'/>
           </Route>
