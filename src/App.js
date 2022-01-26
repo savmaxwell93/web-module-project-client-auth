@@ -6,6 +6,21 @@ const Login = () => {
   return (
     <div>
       <h2>LOGIN</h2>
+      <form>
+        <label>USERNAME
+          <input
+            type='text'
+            name='username'
+          />
+        </label>
+        <label>PASSWORD
+          <input
+            type='password'
+            name='password'
+          />
+        </label>
+        <button>SUBMIT</button>
+      </form>
     </div>
   )
 }
@@ -14,6 +29,9 @@ const FriendsList = () => {
   return (
     <div>
       <h2>FRIENDS LIST</h2>
+      <div>
+        <p>friends here</p>
+      </div>
     </div>
   )
 }
@@ -22,6 +40,21 @@ const AddFriends = () => {
   return (
     <div>
       <h2>ADD FRIEND</h2>
+      <form>
+        <label>FRIEND NAME
+          <input
+            type='text'
+            name='friend-name'
+          />
+        </label>
+        <label>FRIEND EMAIL
+          <input
+            type='text'
+            name='friend-email'
+          />
+        </label>
+        <button>SUBMIT</button>
+      </form>
     </div>
   )
 }
